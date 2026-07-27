@@ -33,7 +33,9 @@ nav, p, section, article {
   padding: 8px;
 }
 
-header {
+header 
+{
+  border-bottom: 3px solid var(--cor-secundaria);
   display: flex;
   align-items: center;
   justify-content: space-between;
