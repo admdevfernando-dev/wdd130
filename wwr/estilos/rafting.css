@@ -43,7 +43,7 @@ header
 }
 
 header .logo {
-  width: 60px;
+  width: 100px;
 }
 
 header nav {
@@ -81,8 +81,7 @@ header nav a:hover {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--cor-destaque1);
+  background-color: rgba(51, 51, 51, 0.75);
   color: #fff;
 }
 
@@ -103,10 +102,10 @@ header nav a:hover {
 /* Seção História */
 .historia {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr 220px 1fr;
   grid-template-areas:
-    "titulo titulo"
-    "imagem texto";
+    "titulo titulo titulo"
+    "texto1 imagem texto2";
   align-items: center;
   gap: 12px 24px;
 }
@@ -122,8 +121,15 @@ header nav a:hover {
   border-radius: 6px;
 }
 
+.historia p:first-of-type {
+  grid-area: texto1;
+}
+
+.historia p:last-of-type {
+  grid-area: texto2;
+}
+
 .historia p {
-  grid-area: texto;
   margin: 16px 0;
   padding: 0;
 }
@@ -171,16 +177,16 @@ footer {
   gap: 16px;
 }
 
-.redes-sociais {
+.socialmedia {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
 
-.redes-sociais a {
+.socialmedia a {
   text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
   width: 30px;
 }
