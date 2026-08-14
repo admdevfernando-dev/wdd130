@@ -1,14 +1,15 @@
 main {
-  max-width: 800px;
+  max-width: 840px;
 }
 
 aside {
-  width: 200px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f5f5f5;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+  padding: 1rem;
+  background-color: #eee;
   color: #333;
+  text-align: center;
 }
 
 aside img {
@@ -26,7 +27,7 @@ p {
 }
 
 footer {
-  margin-top: 20px;
-  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  border-top: 1px solid #000;
   text-align: center;
 }
