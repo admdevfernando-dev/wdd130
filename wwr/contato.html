@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Rio Bravo Rafting: endereço, telefone, e-mail e formulário para tirar dúvidas ou fazer reservas.">
+  <meta name="author" content="Fernando Pereira">
+  <title>Fale Conosco - Rio Bravo Rafting</title>
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo.png" alt="logo Rio Bravo Rafting" class="logo" width="222" height="222">
+    <nav aria-label="Menu principal">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contato-info">
+      <h1>Rio Bravo Rafting</h1>
+      <p class="endereco">
+        Av. Beira Rio, 500 – Foz do Iguaçu, Paraná<br>
+        Telefone: +55 45 99999-9999<br>
+        E-mail: contato@riobravorafting.com.br
+      </p>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Foz+do+Igua%C3%A7u,+Paran%C3%A1&output=embed"
+          width="300" height="250" loading="lazy" title="mapa de Foz do Iguaçu, Paraná">
+        </iframe>
+      </div>
+
+      <form class="formulario-contato" action="#" method="post">
+        <h2>Envie sua Mensagem</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Propósito da Mensagem</legend>
+          <label class="opcao"><input type="radio" id="proposito-geral" name="proposito" value="consulta-geral" checked> Consulta Geral</label>
+          <label class="opcao"><input type="radio" id="proposito-reserva" name="proposito" value="pergunta-reserva"> Pergunta sobre Reserva</label>
+          <label class="opcao"><input type="radio" id="proposito-sugestao" name="proposito" value="sugestao-site"> Sugestão de Site</label>
+        </fieldset>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <label class="opcao"><input type="checkbox" id="newsletter" name="newsletter"> Quero receber a newsletter mensal</label>
+
+        <button type="submit">Entrar em Contato!</button>
+      </form>
+    </section>
+
+    <section class="equipe">
+      <h2>Estamos Aqui para Servi-lo</h2>
+      <div class="funcionarios">
+        <figure>
+          <img src="imagens/funcionario-01.jpg" alt="foto de perfil de funcionário" width="300" height="300">
+          <figcaption>Fernando Pereira<br><span>Guia-Chefe</span></figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/funcionario-02.jpg" alt="foto de perfil de funcionária" width="300" height="300">
+          <figcaption>Camila Souza<br><span>Instrutora de Segurança</span></figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/funcionario-03.jpg" alt="foto de perfil de funcionário" width="300" height="300">
+          <figcaption>Rafael Lima<br><span>Atendimento ao Cliente</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rio Bravo Rafting - Fernando Pereira</p>
+    <nav class="socialmedia redes-sociais" aria-label="Redes sociais">
+      <a href="https://facebook.com"><img src="imagens/facebook.svg" alt="facebook"></a>
+      <a href="https://instagram.com"><img src="imagens/instagram.svg" alt="instagram"></a>
+      <a href="https://youtube.com"><img src="imagens/youtube.svg" alt="youtube"></a>
+    </nav>
+  </footer>
+
+</body>
+</html>
